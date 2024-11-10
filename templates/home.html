@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'master.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block content %}
+    <h2 class="text-center text-danger">headding</h2>
+    
+    <p>To help you create effective content, could you tell me more about the specific type you're looking for? Here are a few possibilities:
+
+Blog Post - Informative, SEO-optimized articles on a specific topic.
+Social Media Post - Engaging content for platforms like Instagram, Twitter, or LinkedIn.
+Website Copy - Clear, compelling text for a homepage, about page, or service page.
+Product Description - Concise, persuasive text to describe a product's benefits.
+Email Content - Personalized, action-oriented messaging for campaigns or newsletters.
+Each has a different style and goal, so any details will help craft the perfect content!</p>
+    
+    <div class="container">
+        <div class="col-sm-4">{% static 'image/facebook.png' %}</div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+
+{% endblock %}
